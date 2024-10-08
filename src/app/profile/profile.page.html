@@ -1,0 +1,13 @@
+<ion-content class="bglogo">
+  <!-- Greeting Card -->
+  <ion-card class="cardheader">
+    <ion-label class="word">WELCOME</ion-label>
+   
+  </ion-card>
+
+  <!-- Image Card -->
+    <img (click)="triggerFileInput(fileInput)" [src]="imageUrl || '../../assets/img/default-profile.png'" alt="Uploaded Image" />
+
+  <!-- Hidden File Input -->
+  <input type="file" #fileInput (change)="onFileSelected($event)" hidden accept="image/*" />
+</ion-content>

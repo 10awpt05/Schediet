@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Foodpedia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Add New User</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Food Name</ion-label>
+        <ion-input [(ngModel)]="newUser.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Food Facts</ion-label>
+        <ion-input [(ngModel)]="newUser.facts"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Good For</ion-label>
+        <ion-input [(ngModel)]="newUser.good_for"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Meal Time</ion-label>
+        <ion-input [(ngModel)]="newUser.time"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Preferable Age</ion-label>
+        <ion-input [(ngModel)]="newUser.age"></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="saveUser()">Save User</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let user of users">
+          <ion-label>
+            <h2>{{user.name}}</h2>
+            <p>{{user.facts}}</p>
+            <p>{{user.good_for}}</p>
+          </ion-label>
+          <ion-buttons slot="end">
+            <ion-button color="danger" (click)="confirmDelete(user.id)">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

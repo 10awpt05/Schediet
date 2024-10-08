@@ -1,0 +1,82 @@
+.cardheader {
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #A594F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 100px;
+  align-items: center;
+  position: relative; 
+  z-index: 1;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+img {
+ display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+ margin: auto;  
+ transform: translateY(-60%);
+position: relative; 
+  z-index: 10;
+}
+
+.bglogo {
+  --background: url('../../assets/img/bglogo1.png');
+}
+
+ion-content.content-center {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+ion-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  align-content: center;  
+  width: 100%;            
+}
+.word {
+  font-family: 'lalezar';
+  font-size: 32px;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  color:#F5EFFF;
+  
+}
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  z-index: 20;
+  width: 70px;
+  height: 70px;
+  margin-left: 55%;
+  margin-top: -76%;
+
+}
+ion-icon {
+  color: rgb(7, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+
+
+    
+
+
